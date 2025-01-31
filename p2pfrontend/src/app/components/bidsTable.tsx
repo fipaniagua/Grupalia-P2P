@@ -46,7 +46,7 @@ function BidsTable({ bids, pageType, setBidSelected }: BidsListProps) {
               <TableCell align="right">{bid.created_at}</TableCell>
               { pageType == "all" &&
                 <TableCell align="right">
-                    <Button onClick={()=> {setBidSelected(bid.id)}}> Aceptar </Button>
+                    <Button disabled={bid.state=='closed'} onClick={()=> {setBidSelected(bid.id)}}> Aceptar </Button>
                 </TableCell>
               }
               { pageType == "bidded" &&
