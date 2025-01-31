@@ -20,9 +20,9 @@ import Paper from '@mui/material/Paper';
 import Stack from '@mui/material/Stack';
 import { styled } from '@mui/material/styles';
 import Bid from './interfaces/bid';
+import BASE_URL from './constants/base_url';
+import FILTER_MAP from './constants/filter_map';
 
-const BASE_URL = "http://localhost:3000";
-const FILTER_MAP: { [key: number]: string }  = {0: "own", 1: "all", 2: "bidded"}
 
 
 export default function Demo() {

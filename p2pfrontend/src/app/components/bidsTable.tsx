@@ -6,16 +6,10 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
-import Bid from '../interfaces/bid';
 import Button from '@mui/material/Button';
+import BidsListProps from '../interfaces/bids_list_props';
 
 
-
-interface BidsListProps {
-    pageType: string,
-    bids: Bid[];
-    setBidSelected: React.Dispatch<React.SetStateAction<number>>
-}
 
 function BidsTable({ bids, pageType, setBidSelected }: BidsListProps) {
     return (

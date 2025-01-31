@@ -8,16 +8,10 @@ import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select, { SelectChangeEvent } from '@mui/material/Select';
 import * as React from 'react';
+import BASE_URL from '../constants/base_url';
+import BidsModalProps from '../interfaces/bids_modal_props';
 
 
-
-type HandleCloseType = () => void;
-
-interface BidsModalProps {
-    open: boolean,
-    handleClose: HandleCloseType,
-    user: string,
-}
 const style = {
     position: 'absolute',
     top: '50%',
@@ -28,7 +22,6 @@ const style = {
     p: 4,
 };
 
-const BASE_URL = "http://localhost:3000";
 
 function BidModal({open, handleClose, user }: BidsModalProps) {
 
